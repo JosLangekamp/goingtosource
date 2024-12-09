@@ -1,0 +1,81 @@
+/* Load JetBrains Mono font from local font files */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('fonts/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+         url('fonts/JetBrainsMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Italic.woff2') format('woff2'),
+         url('fonts/JetBrainsMono-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* search input field */
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  font-family: 'JetBrains Mono', monospace;
+}
+.input:focus {
+  background-color: white;
+  box-shadow: 13px 13px 10px #969696,
+             -13px -13px 10px #ffffff;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 25px;              /* Space between the image and the text */                 
+}       
+header img {
+    width: 100px;           /* Adjust size as needed */ /*remove size and use viewbox later instead */
+    height: 100px;          /* Adjust size as needed */
+    display: block;         /* Ensures no unexpected inline spacing */
+    margin: 0;              /* Removes any default margin */
+    border: none;           /* Removes potential default border */
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;    /* Use bold weight for the header */
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
