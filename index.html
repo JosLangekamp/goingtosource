@@ -15,6 +15,9 @@
     <!-- external files -->
     <link rel="stylesheet" href="pagestyle.css">
     <link rel="icon" type="image/x-icon" href="logo_goingtosource.svg">
+    
+    <!-- script files -->
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
@@ -24,9 +27,13 @@
     </header>
 
     <main>
-        <p><input type="text" autocomplete="off" name="text" class="input" placeholder="Search"></p>
+        <p><input type="text" id="myText" autocomplete="off" name="text" class="input" placeholder="Search" onfocus="this.value=''">
+        <button onclick="myFunction()">Try it</button> </p>
         <p>This is a place to share custom designs, ideas and projects.</p>
         <p>All the code and designs placed here are open source and free to use!</p>
+                         
+        <h2 id="demo"></h2>
+     
     </main>
 
     <footer>
