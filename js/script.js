@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
   function spelling(){
     let textToSearch = document.getElementById("myText").value;
-    if (textToSearch.includes("anuari")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus Januari.";}
-    else if (textToSearch.includes("ebruari")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus Februari.";}
-    else if (textToSearch.includes("Juni")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus Juni.";}
-    else if (textToSearch.includes("Juli")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus Juli.";}
+    if (textToSearch.includes("januari")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus januari.";}
+    else if (textToSearch.includes("februari")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus februari.";}
+    else if (textToSearch.includes("juni")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus juni.";}
+    else if (textToSearch.includes("juli")) {document.getElementById("demo").innerHTML = "Maanden met de ie-klank op het einde schrijf je met een i.<br>De juiste spelling van deze maand is dus juli.";}
     else {myFunction()};
   }
 
